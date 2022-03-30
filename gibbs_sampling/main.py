@@ -3,8 +3,9 @@ import random
 def roll_a_die():
     # 주사위 눈은 1 ~ 6 
     # 각 눈이 선택될 확률은 동일
-    return random.choice(range(1, 7))
+    return random.choice(range(1, 7)) # 주사위 눈 선택
 
+# 𝑥 와 𝑦의 결합확률분포 함수
 def direct_sample():
     d1 = roll_a_die()
     d2 = roll_a_die()
@@ -35,7 +36,7 @@ def random_x_given_y(y):
         return random.randrange(y-6, 7)
 
 # gibbs_sample 함수
-def gibbs_sample(num_iters=100):
+def gibbs_sample(num_iters=10000):
     # 초기값이 무엇이든 상관없음
     x, y = 1, 2
     for _ in range(num_iters):
