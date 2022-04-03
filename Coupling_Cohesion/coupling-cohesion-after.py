@@ -2,7 +2,7 @@ import string
 import random
 
 class VehicleInfo:
-
+    
     def __init__(self, brand, electric, catalogue_price):
         self.brand = brand
         self.electric = electric
@@ -62,7 +62,7 @@ class Application:
         registry = VehicleRegistry()
 
         vehicle = registry.create_vehicle(brand)
-        print(vehicle.info)
+
         # print out the vehicle information
         vehicle.print()
 

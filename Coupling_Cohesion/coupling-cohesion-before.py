@@ -49,4 +49,3 @@ class Application:
 
 app = Application()
 app.register_vehicle("Volkswagen ID3")
-
